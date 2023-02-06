@@ -1,0 +1,20 @@
+body {
+    background-color: beige;
+}
+.car {
+    /*display: flex;
+    justify-content: center;*/
+    align-items: center;
+    margin-top: 15vh;
+}
+
+.car .card-header p {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+@media  (max-width: 767px) {
+    .justify-content-center img {
+        display: none;
+    }
+}

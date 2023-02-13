@@ -74,6 +74,18 @@
                                 <p class=""> Vous n'avez pas de compte ? <a href="http://localhost:8000/register">S'inscrire</a> </p>
                             </div>
                         </div>
+
+                        <div class="row mb-3 mx-2">
+                            <div class="text-center">
+                                <a href="{{route('facebook-auth')}}" class="btn btn-primary">
+                                    <i class="fa fa-facebook px-1" aria-hidden="true"></i><strong>Login with FACEBOOK</strong>
+                                </a>
+                                <a href="{{route('google-auth')}}" class="btn btn-danger">
+                                    <i class="fa fa-google" aria-hidden="true"></i> <strong>Login with GMAIL</strong>
+                                </a>
+                            </div>
+                        </div>
+
                     </form>
                 </div>
             </div>

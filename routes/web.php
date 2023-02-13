@@ -14,9 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('auth/google',[\App\Http\Controllers\GoogleController::class, 'redirect'])->name('google-auth');
+Route::get('auth/google/call-back', [\App\Http\Controllers\GoogleController::class, 'callbackGoogle'])->name('google-callback');
+
+Route::get('auth/facebook', [\App\Http\Controllers\FacebookController::class, 'redirect'])->name('facebook-auth');
+Route::get('auth/facebook/call-back', [\App\Http\Controllers\FacebookController::class, 'callbackFacebook'])->name('facebook-callback');

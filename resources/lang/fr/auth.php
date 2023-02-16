@@ -8,5 +8,6 @@
         'FYP' => 'Mot de passe oublié',
         'Register' => 'S\'inscrire',
         'Name' =>  'Nom & Prénoms',
-        'Confirm Password' => 'Confirmé mot de passe'
+        'Confirm Password' => 'Confirmé mot de passe',
+        'Logout' => 'Deconnexion',
     ];
